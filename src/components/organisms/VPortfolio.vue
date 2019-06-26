@@ -193,14 +193,6 @@ export default {
       .style('font-size', '12px')
       .call(legendSize)
 
-    /*
-		<foreignObject class="circle-overlay" x="10" y="10" width="100" height="150">
-			<div class="circle-overlay__inner">
-				<h2 class="circle-overlay__title">ReactJS</h2>
-				<p class="circle-overlay__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, sunt, aspernatur. Autem repudiandae, laboriosam. Nulla quidem nihil aperiam dolorem repellendus pariatur, quaerat sed eligendi inventore ipsa natus fugiat soluta doloremque!</p>
-			</div>
-		</foreignObject>
-		*/
     const infoBox = node
       .append('foreignObject')
       .classed('circle-overlay hidden', true)
@@ -358,8 +350,6 @@ svg {
   border-radius: 50%;
   position: absolute;
   overflow: hidden;
-  /*it's buggy with the foreignObject background right now*/
-  /*background-color: rgba(255,255,255,0.5);*/
 }
 .circle-overlay__inner {
   text-align: center;

@@ -3,20 +3,21 @@
     <the-toolber></the-toolber>
     <v-portfolio></v-portfolio>
     <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-content>
+    <the-footer></the-footer>
   </v-app>
 </template>
 
 <script>
+import TheFooter from '~/components/organisms/TheFooter'
 import TheToolber from '~/components/organisms/TheToolber'
 import VPortfolio from '~/components/organisms/VPortfolio'
 export default {
   components: {
     TheToolber,
-    VPortfolio
+    VPortfolio,
+    TheFooter
   }
 }
 </script>

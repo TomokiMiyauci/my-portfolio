@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div>safaspk</div>
 </template>
 
 <script>
