@@ -5,10 +5,12 @@
     <v-image></v-image>
     <v-experience></v-experience>
     <v-products></v-products>
+    <v-contact-me></v-contact-me>
   </div>
 </template>
 
 <script>
+import VContactMe from '~/components/organisms/VContactMe'
 import VPortfolio from '~/components/organisms/VPortfolio'
 import VDigest from '~/components/organisms/VDigest'
 import VExperience from '~/components/organisms/VExperience'
@@ -20,7 +22,8 @@ export default {
     VExperience,
     VProducts,
     VPortfolio,
-    VImage
+    VImage,
+    VContactMe
   }
 }
 </script>

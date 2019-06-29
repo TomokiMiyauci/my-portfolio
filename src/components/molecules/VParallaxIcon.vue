@@ -14,7 +14,7 @@
 export default {
   props: {
     src: {
-      type: Function,
+      type: String,
       required: true
     },
     title: {
