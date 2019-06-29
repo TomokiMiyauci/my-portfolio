@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-xl pa-5>
+  <v-container grid-list-xl>
     <p class="text-xs-center headline">- Specific -</p>
     <v-layout row wrap pa-5 justify-space-around>
       <v-flex v-for="i in item" :key="i.name" xs4>
