@@ -1,12 +1,16 @@
 <template>
   <div>
-    <svg
-      width="100%"
-      height="500"
-      font-family="sans-serif"
-      font-size="10"
-      text-anchor="middle"
-    ></svg>
+    <v-layout>
+      <v-flex>
+        <svg
+          width="100%"
+          height="500"
+          font-family="sans-serif"
+          font-size="10"
+          text-anchor="middle"
+        />
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
@@ -14,7 +18,6 @@
 import * as d3 from 'd3'
 import * as d3Legend from 'd3-svg-legend'
 import { data } from '~/plugins/data'
-// import * as d3chromatic from 'd3-scale-chromatic'
 
 export default {
   mounted() {
@@ -51,7 +54,7 @@ export default {
     // reduce number of circles on mobile screen due to slow computation
     if (
       'matchMedia' in window &&
-      window.matchMedia('(max-device-width: 767px)').matches
+      window.matchMedia('(max-device-width: 50px)').matches
     ) {
       data = data.filter(el => {
         return el.value >= 50
@@ -326,23 +329,17 @@ export default {
 </script>
 
 <style scoped>
-html,
-body {
+svg {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Helvetica, Calibri, Roboto, Open Sans, sans-serif;
   backface-visibility: hidden;
+  margin: auto;
+  display: block;
 }
 * {
   box-sizing: inherit;
-}
-h1 {
-  text-align: center;
-}
-svg {
-  margin: auto;
-  display: block;
 }
 
 .circle-overlay {

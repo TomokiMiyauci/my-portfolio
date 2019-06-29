@@ -1,8 +1,8 @@
 <template>
   <v-container grid-list-xl>
     <p class="text-xs-center headline">- Specific -</p>
-    <v-layout row wrap pa-5 justify-space-around>
-      <v-flex v-for="i in item" :key="i.name" xs4>
+    <v-layout row wrap justify-space-around>
+      <v-flex v-for="i in item" :key="i.name" xs12 sm6 md4 xl4>
         <v-card-rating :i="i"></v-card-rating>
       </v-flex>
     </v-layout>

@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <v-container grid-list-xs pa-5>
-      <p class="text-xs-center headline">- Products -</p>
-      <v-layout row wrap justify-space-around pa-5>
-        <v-flex v-for="item in items" :key="item.name" xs4>
-          <v-card-list :item="item"></v-card-list>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </div>
+  <v-container grid-list-xs>
+    <p class="text-xs-center headline">- Products -</p>
+    <v-layout row wrap justify-space-around>
+      <v-flex v-for="item in items" :key="item.name" xs12 sm6 md4 xl4>
+        <v-card-list :item="item"></v-card-list>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
