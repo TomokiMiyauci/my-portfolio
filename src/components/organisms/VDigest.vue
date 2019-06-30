@@ -2,8 +2,8 @@
   <v-layout column wrap class="my-5" align-center>
     <v-flex xs12 sm4 class="my-3">
       <div class="text-xs-center">
-        <h2 class="headline">The best way to start developing</h2>
-        <span class="subheading">Cras facilisis mi vitae nunc</span>
+        <h2 class="headline">Simple and easy development</h2>
+        <span class="subheading">Quick overview</span>
       </div>
     </v-flex>
     <v-flex xs12>
@@ -32,9 +32,22 @@ export default {
     items: [
       {
         icon: 'color_lens',
-        title: 'hello',
+        title: 'Material Design',
         text:
-          'Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt.Suspendisse potenti.'
+          'This site uses Vuetify and is made of material design.Vuetify is a fully featured development framework that provides you with everything you need to take any idea from conception to production.'
+      },
+      {
+        icon: 'fab fa-vuejs',
+        title: 'Component System',
+        text:
+          'This site build on Vue.js.Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.'
+      },
+
+      {
+        icon: 'flash_on',
+        title: 'Fast Deploy',
+        text:
+          'Deployment is quick and easy using Netlify. In addition to Netlify, there are options such as Github pages and Google Firebase, but Netlify cooperates with Github and can fire a build command triggered by a push to a certain branch (for example, master branch).'
       }
     ],
     type: null
