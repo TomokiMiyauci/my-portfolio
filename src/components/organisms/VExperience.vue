@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-xl>
-    <p class="text-xs-center headline">- Specific -</p>
+    <p class="text-xs-center headline">Specific</p>
     <v-layout row wrap justify-space-around>
       <v-flex v-for="i in item" :key="i.name" xs12 sm6 md4 xl4>
         <v-card-rating :i="i"></v-card-rating>
@@ -27,20 +27,21 @@ export default {
           {
             avatar: require('~/assets/img/django.png'),
             title: 'Django',
-            subtitle: 'Most Use Backend'
+            subtitle:
+              'The most used Framework. Especially, ORM and Django SHELL'
           },
           { divider: true, inset: true },
           {
             avatar: require('~/assets/img/drf.png'),
             title: 'Django Rest Framework',
-            subtitle: 'Provide Web API for RESTful - The most Use Backend'
+            subtitle: 'Provide Web API for RESTful - The most Used library'
           },
           { divider: true, inset: true },
           {
             avatar: require('~/assets/img/bs4.jpg'),
             title: 'Beautiful soup4',
             subtitle:
-              "<span class='text--primary'>Sandra Adams</span> &mdash; Do you have Paris recommendations? Have yo"
+              'If Web API is not provided or there is only a paid API, it is useless.'
           }
         ]
       },
@@ -55,20 +56,19 @@ export default {
           {
             avatar: require('~/assets/img/vue.png'),
             title: 'Vue.js',
-            subtitle: 'Most Use Backend'
+            subtitle: 'Awesome component system. SPA can be built easily.'
           },
           { divider: true, inset: true },
           {
             avatar: require('~/assets/img/vuetify.webp'),
             title: 'Vuetify',
-            subtitle: 'Provide Web API for RESTful - The most Use Backend'
+            subtitle: 'Provide a variety of components.'
           },
           { divider: true, inset: true },
           {
             avatar: require('~/assets/img/nuxt.png'),
             title: 'Nuxt.js',
-            subtitle:
-              "<span class='text--primary'>Sandra Adams</span> &mdash; Do you have Paris recommendations? Have yo"
+            subtitle: 'Framework for creating Vue.js applications.'
           }
         ]
       }
