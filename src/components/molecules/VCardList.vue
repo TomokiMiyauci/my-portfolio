@@ -1,27 +1,41 @@
 <template>
-  <v-card>
-    <v-img :src="item.src" :aspect-ratio="16 / 9"></v-img>
-    <v-card-title>
-      <span class="headline">{{ item.name }}</span>
-    </v-card-title>
-    <v-card-text>
-      <span>{{ item.discrib }}</span>
-
-      <v-expansion-panel popout>
-        <v-expansion-panel-content
-          v-for="subItem in item.subItems"
-          :key="subItem.name"
+  <v-hover>
+    <v-card>
+      <v-img :src="item.src" :aspect-ratio="16 / 9"></v-img>
+      <v-card-title>
+        <span class="headline">{{ item.name }}</span>
+        <v-btn v-if="item.isLink" falt icon>
+          <a :href="item.link" target="_blank">
+            <v-icon color="accent">fas fa-link</v-icon>
+          </a>
+        </v-btn>
+      </v-card-title>
+      <v-card-text>
+        <v-chip
+          v-for="chip in item.chips"
+          :key="chip.text"
+          :color="chip.color"
+          :text-color="chip.textColor"
+          >{{ chip.text }}</v-chip
         >
-          <template v-slot:header>
-            <v-subheader>{{ subItem.name }}</v-subheader>
-          </template>
-          <v-card>
-            <v-card-text>{{ subItem.text }}</v-card-text>
-          </v-card>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-card-text>
-  </v-card>
+        <p class="subheading">{{ item.discrib }}</p>
+
+        <v-expansion-panel popout>
+          <v-expansion-panel-content
+            v-for="subItem in item.subItems"
+            :key="subItem.name"
+          >
+            <template v-slot:header>
+              <v-subheader>{{ subItem.name }}</v-subheader>
+            </template>
+            <v-card>
+              <v-card-text>{{ subItem.text }}</v-card-text>
+            </v-card>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-card-text>
+    </v-card>
+  </v-hover>
 </template>
 
 <script>
