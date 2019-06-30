@@ -76,7 +76,7 @@ export default {
             }
           ],
           isLink: true,
-          link: 'https://qiita.com/minoringo/items/917e325892733e0d606e'
+          link: 'https://ecstatic-clarke-5a693e.netlify.com'
         }
       ]
     }
