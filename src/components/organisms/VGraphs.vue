@@ -1,47 +1,34 @@
 <template>
-  <div>
-    <v-container fluid grid-list-lg>
-      <v-layout row wrap justify-space-around>
-        <v-flex xs12 sm6 md4 xl4>
-          <v-card color="grey">
-            <v-card-title class="headline white--text">Acnorage</v-card-title>
-            <v-card-text>
-              <pie-chart :chart-data="chartData" :options="chartOptions" />
-            </v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs12 sm6 md4 xl4>
-          <v-card color="grey">
-            <v-card-title class="headline white--text">Acnorage</v-card-title>
-            <v-card-text>
-              <doughnut-chart :chart-data="chartData" :options="chartOptions" />
-            </v-card-text>
-          </v-card>
-        </v-flex>
-      </v-layout>
+  <v-container fluid grid-list-lg>
+    <v-layout row wrap justify-space-around>
+      <v-flex xs12 sm6 md4 xl4>
+        <v-card color="grey">
+          <v-card-title class="headline white--text">knowledge</v-card-title>
+          <v-card-text>
+            <pie-chart :chart-data="chartData" :options="chartOptions" />
+          </v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs12 sm6 md4 xl4>
+        <v-card color="grey">
+          <v-card-title class="headline white--text">Acnorage</v-card-title>
+          <v-card-text>
+            <doughnut-chart :chart-data="chartData" :options="chartOptions" />
+          </v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
 
-      <div class="text-xs-center mt-2">
-        <v-btn dark color="indigo" @click="randomizeData()"
-          >Randomize data</v-btn
-        >
-      </div>
-    </v-container>
-    <v-container grid-list-xs>
-      <v-career fluid>
-        <v-career></v-career>
-      </v-career>
-    </v-container>
-  </div>
+    <div class="text-xs-center mt-2">
+      <v-btn dark color="indigo" @click="randomizeData()">Randomize data</v-btn>
+    </div>
+  </v-container>
 </template>
 
 <script>
-import VCareer from '~/components/organisms/VCareer'
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  components: {
-    VCareer
-  },
   data() {
     return {
       chartDataValues: [],
@@ -96,3 +83,5 @@ export default {
   }
 }
 </script>
+
+<style></style>
