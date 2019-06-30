@@ -38,13 +38,15 @@ export default {
         year: 2019,
         color: 'red',
         title: 'What a new environment?',
-        text: 'rsfjnaksfkajfkljfl ksjfkajlskafj jfsjalkfjaslfj'
+        text:
+          'I was impressed by the culture of the OSS and decided to stay in the IT industry. I am looking forward new job.'
       },
       {
         year: 2017,
         color: 'grey',
-        title: 'HC Asset Management co',
-        text: 'rsfjnaksfkajfkljfl ksjfkajlskafj jfsjalkfjaslfj'
+        title: 'HC Asset Management Co., Ltd.',
+        text:
+          'HC Asset is an investment management company that mainly manages corporate pension funds and credit unions.　In particular, we deal with LPS products, which have special schemes and management methods and are very niche. I joined this company in 2017.'
       },
       {
         year: 2013,
