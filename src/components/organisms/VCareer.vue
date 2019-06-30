@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-container>
     <p class="headline">Where I have been</p>
 
     <v-timeline dense align-top>
@@ -27,7 +27,7 @@
         </v-layout>
       </v-timeline-item>
     </v-timeline>
-  </div>
+  </v-container>
 </template>
 
 <script>

@@ -1,9 +1,7 @@
 <template>
   <div>
     <v-graphs></v-graphs>
-    <v-container grid-list-xs>
-      <v-career></v-career>
-    </v-container>
+    <v-career></v-career>
     <v-do-i-do></v-do-i-do>
   </div>
 </template>
