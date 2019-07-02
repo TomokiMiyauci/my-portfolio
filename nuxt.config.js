@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   srcDir: 'src/',
   /*
    ** Headers of the page
@@ -34,7 +34,8 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@fortawesome/fontawesome-free/css/all.css'],
+  // css: ['@fortawesome/fontawesome-free/css/all.css'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */
@@ -78,6 +79,12 @@ export default {
    ** Build configuration
    */
   build: {
+    analyze: true,
+    splitChunks: {
+      layouts: true,
+      pages: true,
+      commons: true
+    },
     /*
      ** You can extend webpack config here
      */

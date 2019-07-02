@@ -6,7 +6,7 @@
         <span class="headline">{{ item.name }}</span>
         <v-btn v-if="item.isLink" falt icon>
           <a :href="item.link" target="_blank">
-            <v-icon color="accent">fas fa-link</v-icon>
+            <v-icon color="primary">exit_to_app</v-icon>
           </a>
         </v-btn>
       </v-card-title>
@@ -49,4 +49,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+a {
+  text-decoration: none;
+}
+</style>
