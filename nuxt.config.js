@@ -50,7 +50,7 @@ export default {
   modules: [
     '@nuxtjs/vuetify',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/eslint-module'
   ],
