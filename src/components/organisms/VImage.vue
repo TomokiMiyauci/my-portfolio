@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       item: {
-        src: require('assets/logo/load.jpg'),
+        src: require('assets/logo/load1.jpg'),
         title: 'Who I am.',
         subTitle: "Let's getting start to know about Me!",
         link: '/career',
