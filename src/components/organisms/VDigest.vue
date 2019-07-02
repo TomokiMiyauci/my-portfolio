@@ -37,7 +37,7 @@ export default {
           'This site uses Vuetify and is made of material design.Vuetify is a fully featured development framework that provides you with everything you need to take any idea from conception to production.'
       },
       {
-        icon: 'fab fa-vuejs',
+        icon: 'view_module',
         title: 'Component System',
         text:
           'This site build on Vue.js.Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.'

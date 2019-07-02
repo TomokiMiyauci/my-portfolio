@@ -17,6 +17,7 @@ import VExperience from '~/components/organisms/VExperience'
 import VProducts from '~/components/organisms/VProducts'
 import VImage from '~/components/organisms/VImage'
 export default {
+  head: { title: 'Home' },
   components: {
     VDigest,
     VExperience,

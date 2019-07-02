@@ -12,6 +12,9 @@ import VDoIDo from '~/components/organisms/VDoIDo'
 import VCareer from '~/components/organisms/VCareer'
 
 export default {
+  head: {
+    title: 'Career'
+  },
   components: {
     VCareer,
     VDoIDo,
