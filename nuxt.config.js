@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   srcDir: 'src/',
   /*
    ** Headers of the page
@@ -54,6 +54,10 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/eslint-module'
   ],
+  manifest: {
+    name: 'My Portfolio',
+    description: 'A simply readable portfolio app'
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
