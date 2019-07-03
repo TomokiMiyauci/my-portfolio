@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-xl>
-    <h1 class="headline">What do I in HC</h1>
+    <h1 class="headline">What I did in HC</h1>
 
     <v-layout row wrap>
       <v-flex v-for="item in items" :key="item.title" xs12 sm6 md4 xl4>
@@ -29,13 +29,11 @@ export default {
         subTitle: '2017 - Now',
         text: `<ul>
         <li>Responsiblefor overall contract processing for foreign nationals and domestic registered investment trusts</li>
-        <li>We are in charge of general duties about call business / distribution correspondence, mark-to-market, cash management from investment business limited liability union application -Preparation of operation report, report</li>
-        <li>Fund's foreign exchange, Japanese yen input processing</li>
+        <li>We are in charge of general duties about Call  / Distribution correspondence, mark-to-market, cash management from  LPS -Preparation of operation report</li>
+        <li>Fund's foreign exchange</li>
         <li>System entry and management of settlement account information</li>
         <li>Delivery of funds, general check business</li>
         <li>Commitment communication with re-trust bank</li>
-        <li>Other department internal business operations (Making of meeting materials, telephone calls, guidance of junior staff, temporary staff, etc.)</li>
-        <li>Proposal of efficiency improvement proposal of business input work using Access tool and creation of business manual</li>
         </ul> `
       },
       {
@@ -52,10 +50,11 @@ export default {
         title: 'Development',
         subTitle: '2018 - Now',
         text: `<ul>
-        <li>Internal system environment (Web App) construction plan, Requirements definition, Basic design, Coding, Unit test, Comprehensive test</li>
+        <li>Implementation of uniform management using DB from a system in which Excel was the dominant management tool.</li>
+        <li>Internal system environment (Web App) construction, Requirements definition,To design Wire frame, Coding, Unit test, Comprehensive test</li>
         <li>Development of Single Page Application with Vue.js (Nuxt.js) as the front end and Dango Rest Framework as the back end.</li>
         <li>Migration from existing Access-based backbone systems to browser-based internal systems.</li>
-        <li>Implementation of uniform management using DB from a system in which Excel was the dominant management tool.</li></ul>`
+        </ul>`
       }
     ]
   })

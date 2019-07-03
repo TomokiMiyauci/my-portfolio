@@ -2,8 +2,8 @@
   <v-container grid-list-xl>
     <p class="text-xs-center headline">Specific</p>
     <v-layout row wrap justify-space-around>
-      <v-flex v-for="i in item" :key="i.name" xs12 sm6 md4 xl4>
-        <v-card-rating :i="i"></v-card-rating>
+      <v-flex v-for="item in items" :key="item.name" xs12 sm6 md4 xl4>
+        <v-card-rating :items="item"></v-card-rating>
       </v-flex>
     </v-layout>
   </v-container>
@@ -16,11 +16,11 @@ export default {
     VCardRating
   },
   data: () => ({
-    item: [
+    items: [
       {
         name: 'Python',
         src: require('~/assets/logo/python.jpg'),
-        value: 1.5,
+        value: 1.0,
         version: '3.7.2',
         subItems: [
           { header: 'Ecosystem' },
@@ -72,33 +72,7 @@ export default {
           }
         ]
       }
-    ],
-    reviews: 'year',
-    value: 1.5,
-    items: [
-      { header: 'Frameworks' },
-      {
-        avatar: require('~/assets/img/django.png'),
-        title: 'Django',
-        subtitle: 'Most Use Backend'
-      },
-      { divider: true, inset: true },
-      {
-        avatar: require('~/assets/img/drf.png'),
-        title: 'Django Rest Framework',
-        subtitle: 'Provide Web API for RESTful - The most Use Backend'
-      },
-      { divider: true, inset: true },
-      {
-        avatar: require('~/assets/img/bs4.jpg'),
-        title: 'Beautiful soup4',
-        subtitle:
-          "<span class='text--primary'>Sandra Adams</span> &mdash; Do you have Paris recommendations? Have yo"
-      }
     ]
-  }),
-  methods: {
-    click() {}
-  }
+  })
 }
 </script>

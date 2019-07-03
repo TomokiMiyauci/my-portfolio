@@ -1,24 +1,24 @@
 <template>
   <v-hover>
     <v-card slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`">
-      <v-img :aspect-ratio="16 / 9" :src="i.src">
+      <v-img :aspect-ratio="16 / 9" :src="items.src">
         <v-expand-transition>
           <div
             v-if="hover"
             class="d-flex transition-fast-in-fast-out black darken-2 v-card--reveal display-3 white--text"
             style="height: 100%;"
           >
-            {{ i.version }}
+            {{ items.version }}
           </div>
         </v-expand-transition>
       </v-img>
 
       <v-card-title>
         <div>
-          <span class="headline">{{ i.name }}</span>
+          <span class="headline">{{ items.name }}</span>
           <div class="d-flex">
             <v-rating
-              :value="i.value"
+              :value="items.value"
               color="amber"
               dense
               half-increments
@@ -26,7 +26,7 @@
               size="20"
             ></v-rating>
             <div class="ml-2 grey--text text--darken-2">
-              <span>{{ i.value }}</span>
+              <span>{{ items.value }}</span>
               <span>(year)</span>
             </div>
           </div>
@@ -34,7 +34,7 @@
       </v-card-title>
       <v-card-text>
         <v-list two-line>
-          <template v-for="(item, index) in i.subItems">
+          <template v-for="(item, index) in items.subItems">
             <v-subheader v-if="item.header" :key="item.header">{{
               item.header
             }}</v-subheader>
@@ -67,7 +67,7 @@
 <script>
 export default {
   props: {
-    i: {
+    items: {
       type: Object,
       required: true
     }
