@@ -4,7 +4,7 @@
     <v-card-text>
       <span class="number white--text">
         25
-        <sup>s</sup>
+        <sup>y.o.</sup>
       </span>
 
       <doughnut-chart
