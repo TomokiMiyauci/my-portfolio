@@ -20,7 +20,7 @@ export default {
       {
         name: 'Python',
         src: require('~/assets/logo/python.jpg'),
-        value: 1.0,
+        value: 1.5,
         version: '3.7.2',
         subItems: [
           { header: 'Ecosystem' },

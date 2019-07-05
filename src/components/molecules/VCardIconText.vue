@@ -1,5 +1,5 @@
 <template>
-  <v-card class="elevation-0 transparent">
+  <v-card flat class="elevation-0 transparent">
     <v-card-text class="text-xs-center">
       <v-icon x-large class="red--text">{{ icon }}</v-icon>
     </v-card-text>

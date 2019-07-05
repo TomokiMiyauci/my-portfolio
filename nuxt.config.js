@@ -48,14 +48,15 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/vuetify',
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/eslint-module'
   ],
+  devModules: ['@nuxtjs/vuetify'],
   manifest: {
     name: 'My Portfolio',
+    short_name: 'My Portfolio',
     description: 'A simply readable portfolio app'
   },
   /*
@@ -68,6 +69,7 @@ export default {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
+    customVariables: ['~/assets/variables.scss'],
     theme: {
       primary: colors.blue.darken2,
       accent: colors.grey.darken3,
