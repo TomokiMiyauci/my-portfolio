@@ -1,8 +1,8 @@
 <template>
-  <v-footer dark height="auto">
+  <v-footer padless dark height="auto">
     <v-card class="flex" flat tile>
       <v-card-actions class="grey darken-3 justify-center">
-        &copy;2019 — Powerd by
+        &copy;2019 — Powered by
         <v-icon flat class="ml-2">fab fa-github-square</v-icon>
         <a href="https://github.com/TomokiMiyauci">
           <strong>TomokiMiyauci</strong>

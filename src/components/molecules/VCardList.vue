@@ -20,19 +20,20 @@
         >
         <p class="subheading">{{ item.discrib }}</p>
 
-        <v-expansion-panel popout>
-          <v-expansion-panel-content
+        <v-expansion-panels popout>
+          <v-expansion-panel
             v-for="subItem in item.subItems"
             :key="subItem.name"
           >
-            <template v-slot:header>
-              <v-subheader>{{ subItem.name }}</v-subheader>
-            </template>
-            <v-card>
-              <v-card-text>{{ subItem.text }}</v-card-text>
-            </v-card>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
+            <v-expansion-panel-header>
+              {{ subItem.name }}
+            </v-expansion-panel-header>
+
+            <v-expansion-panel-content>{{
+              subItem.text
+            }}</v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-card-text>
     </v-card>
   </v-hover>

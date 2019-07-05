@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar color="red" dark>
+  <v-app-bar color="red" dark>
     <v-toolbar-title>
       <v-avatar size="30px">
         <v-img
@@ -11,10 +11,10 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn flat to="/">Home</v-btn>
-      <v-btn flat to="/career">Career</v-btn>
+      <v-btn text to="/">Home</v-btn>
+      <v-btn text to="/career">Career</v-btn>
     </v-toolbar-items>
-  </v-toolbar>
+  </v-app-bar>
 </template>
 
 <script>
